@@ -1612,6 +1612,66 @@
      "file": "1990-acta-astronautica-21-2-16-declaration.pdf"
     }
    ]
+  },
+  {
+   "id": "caseti-1999",
+   "date": "1999-01",
+   "date_label": "1999 (workshops 1991–1992; report prepared 1994)",
+   "category": "denning",
+   "type": "Workshop report",
+   "status": "Published report",
+   "ref": "ISBN 0-9666335-0-4",
+   "issuer": "SETI Press (SETI Institute); edited by John Billingham, Roger Heyns, David Milne, Stephen Doyle, Michael Klein, John Heilbron, Michael Ashkenazi, Michael Michaud, Julie Lutz and Seth Shostak",
+   "title": "Social Implications of the Detection of an Extraterrestrial Civilization: A Report of the Workshops on the Cultural Aspects of SETI",
+   "short": "CASETI workshops report, 1999",
+   "summary": "The report of the Workshops on the Cultural Aspects of SETI (CASETI), held in three sessions at Santa Cruz, California, in October 1991, May 1992 and September 1992, while NASA was preparing its High Resolution Microwave Survey. Historians, social scientists, policy specialists, educators and journalists considered how people and institutions might respond to the detection of a signal. Chapters cover the NASA search itself, SETI in the history of ideas, likely human responses, policy, and education and the media. The executive summary gathers the recommendations, and the appendix reproduces the 1989 Declaration of Principles. The report was prepared in March 1994 and published by SETI Press in 1999.",
+   "notes": "Scanned from a library copy; the interlibrary-loan cover sheets and duplicate title pages have been removed. Copyright the SETI Institute; reproduced with its permission.",
+   "file": "",
+   "release": "public",
+   "parts": [
+    {
+     "title": "Front matter: participants, preface, foreword, introduction, postscript and in memoriam",
+     "authors": "Seth Shostak, David Milne, Roger Heyns and John Billingham",
+     "pages": "pp. 1–16",
+     "file": "1999-caseti-social-implications-0-front-matter.pdf"
+    },
+    {
+     "title": "Chapter 1. The NASA Observing Program: A High-Resolution Microwave Survey",
+     "authors": "Coordinator: Michael J. Klein",
+     "pages": "pp. 17–32",
+     "file": "1999-caseti-social-implications-1-nasa-observing-program.pdf"
+    },
+    {
+     "title": "Chapter 2. SETI and History",
+     "authors": "Coordinator: J. L. Heilbron",
+     "pages": "pp. 33–60",
+     "file": "1999-caseti-social-implications-2-seti-and-history.pdf"
+    },
+    {
+     "title": "Chapter 3. SETI and Human Behavior: Human Responses to an ETI Signal Detection",
+     "authors": "Coordinator: Michael Ashkenazi",
+     "pages": "pp. 61–82",
+     "file": "1999-caseti-social-implications-3-seti-and-human-behavior.pdf"
+    },
+    {
+     "title": "Chapter 4. SETI and Policy",
+     "authors": "Coordinator: Michael A. G. Michaud",
+     "pages": "pp. 83–94",
+     "file": "1999-caseti-social-implications-4-seti-and-policy.pdf"
+    },
+    {
+     "title": "Chapter 5. SETI, Education, News, and Entertainment",
+     "authors": "Coordinator: Andrew Fraknoi",
+     "pages": "pp. 95–120",
+     "file": "1999-caseti-social-implications-5-education-news-entertainment.pdf"
+    },
+    {
+     "title": "Executive summary, appendix (the 1989 Declaration of Principles) and references",
+     "authors": "Stephen Doyle and David H. Milne",
+     "pages": "pp. 121–145",
+     "file": "1999-caseti-social-implications-6-executive-summary-appendix-references.pdf"
+    }
+   ]
   }
  ]
 }
