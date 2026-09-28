@@ -1673,6 +1673,36 @@
      "file": "1999-caseti-social-implications-6-executive-summary-appendix-references.pdf"
     }
    ]
+  },
+  {
+   "id": "pesek-lecturers",
+   "date": "2026-09-28",
+   "date_label": "28 September 2026",
+   "category": "history",
+   "type": "List",
+   "status": "Reference list",
+   "issuer": "Compiled by Michael Garrett",
+   "title": "Rudolph Pešek Lecturers, IAA Symposium on SETI (session A4.1)",
+   "short": "Pešek Lecturers",
+   "summary": "A year-by-year list of the Pešek Lecturers since 2000, with the congress and the title of each lecture. The Pešek Lecture is the keynote of the SETI I session (SETI Science and Technology) of the IAA Symposium on SETI, named after Rudolph Pešek, who coined the acronym CETI and was the first Chair of the IAA's CETI Committee.",
+   "notes": "A few years are not yet known and some are still to be confirmed. Corrections are welcome.",
+   "file": "2026-09-pesek-lecturers.pdf",
+   "release": "public"
+  },
+  {
+   "id": "billingham-lecturers",
+   "date": "2026-09-28",
+   "date_label": "28 September 2026",
+   "category": "history",
+   "type": "List",
+   "status": "Reference list",
+   "issuer": "Compiled by Michael Garrett",
+   "title": "Billingham Cutting-Edge Lecturers, IAA Symposium on SETI (session A4.2)",
+   "short": "Billingham Cutting-Edge Lecturers",
+   "summary": "A year-by-year list of the Billingham Cutting-Edge Lecturers since the lecture was established in 2005, with the congress and the title of each lecture. The lecture opens the SETI II session (SETI and Society) of the IAA Symposium on SETI and honours John Billingham, long-time member and former Chair of the Committee.",
+   "notes": "A few years are not yet known. Corrections are welcome.",
+   "file": "2026-09-billingham-lecturers.pdf",
+   "release": "public"
   }
  ]
 }

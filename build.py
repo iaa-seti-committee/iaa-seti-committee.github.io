@@ -143,7 +143,8 @@ for k, label in CATS.items():
     if k in ("meetings", "revision"): continue
     items = by_date([d for d in docs if d["category"] == k])[::-1]
     items.sort(key=lambda d: d["id"] != "declaration-2026")
-    items.sort(key=lambda d: d["id"] == "dumas-catalogue")
+    TAIL = {"dumas-catalogue": 1, "pesek-lecturers": 2, "billingham-lecturers": 3}
+    items.sort(key=lambda d: TAIL.get(d["id"], 0))
     if not items: continue
     intro = f'<p class="gintro">{e(GROUP_INTRO[k])}</p>' if k in GROUP_INTRO else ""
     cat_blocks.append(f'<section class="cgroup" data-group="{k}"><h3>{e(label)} <span class="count">{len(items)}</span></h3>{intro}{"".join(card(d) for d in items)}</section>')
