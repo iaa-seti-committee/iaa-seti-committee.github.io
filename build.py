@@ -134,7 +134,7 @@ for row in compare:
     cmp_rows.append(f'<article class="crow"><header><h3>{e(row["theme"])}</h3><p>{e(row["change"])}</p></header><div class="cells">{"".join(cells)}</div></article>')
 
 GROUP_INTRO = {
-    "scales": "Two scales developed within the Committee to put a number on events that are otherwise hard to judge. The Rio Scale rates the significance of a claimed detection of extraterrestrial intelligence; the San Marino Scale rates the potential impact of a deliberate transmission from Earth. Both were formally adopted and have not been withdrawn, but they are no longer regarded as the best tools for these purposes and are kept here as part of the historical record (see Schwarz et al. 2026, pp. 3–5).",
+    "scales": "Two scales developed within the Committee to put a number on events that are otherwise hard to judge. The Rio Scale rates the significance of a claimed detection of extraterrestrial intelligence; the San Marino Scale rates the potential impact of a deliberate transmission from Earth. Both were formally adopted and have not been withdrawn, but they are no longer regarded as the best tools for these purposes and are kept here as part of the historical record (see Schwarz et al. 2026, pp. 3–5). Below them are related papers: the original Rio Scale paper, the proposed Rio 2.0 revision and the debate it prompted, and the London Scale for claims of extraterrestrial life. Rio 2.0 and the London Scale were never adopted.",
     "denning": "A reference collection on the history of thinking about post-detection, brought together by Kathryn Denning (York University), a member of the Committee since 2005 and of its Post-Detection Task Group. It runs from the papers that led to the 1989 Declaration to work that preceded and accompanied the recent revision, and is still being added to. Items marked Proposed were never adopted; internal Committee proposals are listed for the record but not published.",
 }
 def by_date(ds): return sorted(ds, key=lambda d: d["date"])
@@ -143,6 +143,8 @@ for k, label in CATS.items():
     if k in ("meetings", "revision"): continue
     items = by_date([d for d in docs if d["category"] == k])[::-1]
     items.sort(key=lambda d: d["id"] != "declaration-2026")
+    HEAD = {"rio-scale": -2, "san-marino-scale": -1}
+    items.sort(key=lambda d: HEAD.get(d["id"], 0))
     TAIL = {"dumas-catalogue": 1, "pesek-lecturers": 2, "billingham-lecturers": 3}
     items.sort(key=lambda d: TAIL.get(d["id"], 0))
     if not items: continue
