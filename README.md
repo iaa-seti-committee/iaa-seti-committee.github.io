@@ -20,10 +20,12 @@ The site is a single static page (`index.html`) plus the documents in `files/`. 
 
 1. Put the file in `files/`, named `YYYY-MM-short-name.pdf`.
 2. Add an entry to `catalogue.json`, copying the shape of an existing one. Set `"release": "public"`.
-   `category` is one of `core`, `revision`, `scales`, `history`, `governance`, `meetings`.
+   `category` is one of `core`, `revision`, `scales`, `history`, `denning`, `governance`, `meetings`.
    Meeting records also need a `meeting` label, for example `"IAC 2026, Antalya"`.
 3. Run `python3 build.py`.
 4. Commit and push. GitHub Pages republishes within a minute or two.
+
+A publication made up of several files, such as a journal issue or a book scanned by chapter, is one entry with a `"parts"` list instead of a `"file"`: each part has a `title`, `authors`, `pages` and `file`.
 
 Use `"release": "cite"` with an empty `"file"` for a document that should be listed but not hosted, for example because of publisher copyright, or `"release": "link"` with a `"link"` URL for a document hosted elsewhere.
 

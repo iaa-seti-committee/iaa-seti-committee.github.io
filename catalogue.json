@@ -48,6 +48,21 @@
    "key": true
   },
   {
+   "id": "position-paper-draft-2008",
+   "date": "2008-03",
+   "date_label": "2007–2008 (this draft dated March 2008)",
+   "category": "denning",
+   "type": "Draft revision",
+   "title": "Proposed revision of the IAA Position Paper on sending communications (draft revision 2.4)",
+   "short": "Proposed revision of the 1996 Position Paper, 2007–2008",
+   "status": "Proposed revision (not adopted)",
+   "issuer": "IAA SETI Permanent Committee",
+   "summary": "A proposed revision of the 1996 Position Paper, prepared by the Committee's Transmissions from Earth Subcommittee during the debates of the 2000s over active SETI. A version was presented to the IAA in March 2007; this copy is the 14-page draft revision 2.4 of March 2008. Its foreword records what happened to the 1996 paper: only seven of the 63 COPUOS member states replied and none was prepared to table it. The revision was never adopted and is included here only for the record.",
+   "notes": "Marked PROPOSED: this text was never adopted by the Committee or the IAA. The adopted text remains the 1996 Position Paper.",
+   "file": "2008-position-paper-draft-revision.pdf",
+   "release": "public"
+  },
+  {
    "id": "declaration-2010",
    "date": "2010-09-30",
    "date_label": "30 September 2010",
@@ -110,9 +125,9 @@
    "type": "Assessment scale",
    "title": "The Rio Scale",
    "short": "Rio Scale",
-   "status": "Adopted by the Committee",
+   "status": "Historical tool",
    "issuer": "Iván Almár and Jill Tarter; IAA SETI Permanent Committee",
-   "summary": "An ordinal scale from 0 to 10 for rating the significance of any public claim of evidence for extraterrestrial intelligence, modelled on the Torino asteroid-impact scale. The value is RS = Q × d, where Q combines the class of phenomenon, the type of discovery and the distance, and d is the assessed credibility. It is meant to be revised as a claim is investigated. The 2010 Declaration recommends it for explaining candidate signals to non-specialists.",
+   "summary": "An ordinal scale from 0 to 10 for rating the significance of any public claim of evidence for extraterrestrial intelligence, modelled on the Torino asteroid-impact scale. The value is RS = Q × d, where Q combines the class of phenomenon, the type of discovery and the distance, and d is the assessed credibility. It is meant to be revised as a claim is investigated. The 2010 Declaration recommends it for explaining candidate signals to non-specialists. The scale was formally adopted and has not been withdrawn, but it is no longer regarded as the best tool for the purpose; see Schwarz et al. 2026, pp. 3–5.",
    "notes": "Proposed at the 51st IAC in Rio de Janeiro in October 2000. Adopted by the Committee in 2002; Revision 1.2 accepted in Bremen in 2003. A revised Rio Scale 2.0 was presented to the Committee in 2017. This copy was printed from iaaseti.org in September 2026.",
    "file": "rio-scale.pdf",
    "release": "public"
@@ -125,9 +140,9 @@
    "type": "Assessment scale",
    "title": "The San Marino Scale",
    "short": "San Marino Scale",
-   "status": "Adopted by the Committee",
+   "status": "Historical tool",
    "issuer": "Iván Almár; IAA SETI Permanent Committee",
-   "summary": "The counterpart to the Rio Scale for transmissions from Earth. It rates the potential exposure of a deliberate transmission or reply on a scale of 1 to 10, as SMI = I + C, where I measures signal intensity relative to the Sun's background at the same frequency and C reflects the information content. It gives the debate over messaging to extraterrestrial intelligence (METI) a common measure.",
+   "summary": "The counterpart to the Rio Scale for transmissions from Earth. It rates the potential exposure of a deliberate transmission or reply on a scale of 1 to 10, as SMI = I + C, where I measures signal intensity relative to the Sun's background at the same frequency and C reflects the information content. It gives the debate over messaging to extraterrestrial intelligence (METI) a common measure. The scale was formally adopted and has not been withdrawn, but it is no longer regarded as the best tool for the purpose; see Schwarz et al. 2026, pp. 3–5.",
    "notes": "Proposed in San Marino in March 2005 at the 6th World Symposium on the Exploration of Space and Life in the Universe. Endorsed and adopted by the Committee in Hyderabad in September 2007. This copy was printed from iaaseti.org in September 2026.",
    "file": "san-marino-scale.pdf",
    "release": "public"
@@ -262,21 +277,22 @@
   },
   {
    "id": "garrett-2025",
-   "date": "2025-10",
-   "date_label": "October 2025",
-   "category": "revision",
+   "date": "2025-09-27",
+   "date_label": "27 September 2025",
+   "category": "denning",
    "type": "Conference paper",
    "title": "SETI Post-Detection Protocols: Progress Towards a New Version",
    "short": "Garrett et al. 2025 (IAC Sydney)",
-   "status": "Penultimate draft",
+   "status": "Published paper",
    "issuer": "M. A. Garrett, K. Denning, L. I. Tennen, C. Oliver",
    "summary": "The third task group paper, presenting the results of the structured consultation and a new draft of the revised Declaration at IAC 2025 in Sydney. It explains that the aim was to keep the lasting values of the earlier documents while making them fit twenty-first-century science, media and public engagement, and that the protocols are a living document that will need continued refinement.",
-   "notes": "Presented at the 76th International Astronautical Congress, Sydney, 2025. This copy is the penultimate version (11 September 2025), not the final text submitted to the IAF.",
-   "file": "2025-garrett-et-al-iac-sydney.pdf",
+   "notes": "The version submitted to the IAC 2025 proceedings on 27 September 2025. Presented at the 76th International Astronautical Congress, Sydney, 2025. Copyright the authors; released to the IAF to publish.",
+   "file": "2025-09-garrett-et-al-iac-sydney-final.pdf",
    "release": "public",
    "also_meetings": [
     "IAC 2025, Sydney"
-   ]
+   ],
+   "ref": "IAC-25-A4.2.4, 99704"
   },
   {
    "id": "vote-report-2026",
@@ -1254,6 +1270,348 @@
    "notes": "Presented as the Billingham Cutting Edge Lecture at the 74th International Astronautical Congress, Baku, 2023. Copyright the International Astronautical Federation; reproduced with the permission of the IAF and the author.",
    "file": "2023-10-walton-history-1990-1999.pdf",
    "release": "public"
+  },
+  {
+   "id": "denning-2023",
+   "category": "meetings",
+   "meeting": "IAC 2023, Baku",
+   "date": "2023-10-03",
+   "date_label": "3 October 2023",
+   "type": "Post-detection report",
+   "status": "Committee report",
+   "issuer": "Kathryn Denning",
+   "pdp": true,
+   "title": "Post-detection report to the IAA SETI Committee, 2023",
+   "short": "Post-detection report 2023",
+   "summary": "Reports that, although the Committee still had no formal post-detection working group, a small task group had begun preliminary work on revising the Protocols, and reviews post-detection work by members and researchers outside the Committee.",
+   "file": "2023-10-denning-post-detection-report.pdf",
+   "release": "public"
+  },
+  {
+   "id": "denning-2023-slides",
+   "category": "meetings",
+   "meeting": "IAC 2023, Baku",
+   "date": "2023-10-03",
+   "date_label": "3 October 2023",
+   "type": "Slides",
+   "status": "Committee presentation",
+   "issuer": "Kathryn Denning",
+   "pdp": true,
+   "title": "Post-detection update: slides, 2023",
+   "short": "Post-detection slides 2023",
+   "summary": "The slides for Kathryn Denning's 2023 post-detection report.",
+   "notes": "Converted from PowerPoint.",
+   "file": "2023-10-denning-post-detection-slides.pdf",
+   "release": "public"
+  },
+  {
+   "id": "commission-2023-03",
+   "category": "meetings",
+   "meeting": "IAC 2022, Paris",
+   "date": "2023-03",
+   "date_label": "March 2023",
+   "type": "Report",
+   "status": "Committee report",
+   "issuer": "Michael Garrett, Chair",
+   "pdp": true,
+   "title": "SETI PC report to IAA Commission 1, March 2023",
+   "short": "Report to Commission 1, March 2023",
+   "summary": "Reports that the main activity of the year had been to restart work on updating the post-detection protocols, last revised in 2010, led by Carol Oliver and Kathryn Denning with the Executive and Les Tennen, and that a paper on the update had been submitted to IAC 2023. It also covers membership records, colleagues who had died, including Frank Drake, and the rapid growth of SETI worldwide.",
+   "notes": "Private Dropbox links have been removed from this copy.",
+   "file": "2023-03-report-to-commission-1.pdf",
+   "release": "public"
+  },
+  {
+   "id": "commission-2024-03",
+   "category": "meetings",
+   "meeting": "IAC 2023, Baku",
+   "date": "2024-03",
+   "date_label": "March 2024",
+   "type": "Report",
+   "status": "Committee report",
+   "issuer": "Michael Garrett, Chair",
+   "pdp": true,
+   "title": "SETI Committee report to IAA Commission 1, March 2024",
+   "short": "Report to Commission 1, March 2024",
+   "summary": "Reports on the Baku meeting and on the growing activity around post-detection protocols inside and outside the Committee, including the SETI Post-Detection Hub at St Andrews and the new IISL SETI and Law Working Group, and notes that a paper by Tennen, Denning, Oliver and Garrett was being prepared for IAC 2024.",
+   "notes": "Private Dropbox links have been removed from this copy.",
+   "file": "2024-03-report-to-commission-1.pdf",
+   "release": "public"
+  },
+  {
+   "id": "denning-tennen-2019-slides",
+   "category": "meetings",
+   "meeting": "IAC 2019, Washington DC",
+   "date": "2019-10-23",
+   "date_label": "23 October 2019",
+   "type": "Slides",
+   "status": "Committee presentation",
+   "issuer": "Kathryn Denning and Leslie I. Tennen",
+   "pdp": true,
+   "title": "Post-detection related developments, ongoing work towards SETI Protocols 2.0, and SETI in Society news",
+   "short": "Post-detection update 2019",
+   "summary": "The post-detection update given to the Committee in Washington in 2019. It proposed that the Protocols be supplemented by a Code of Conduct and Best Practices guidelines, the approach later taken in the 2026 Update.",
+   "file": "2019-10-denning-tennen-post-detection-slides.pdf",
+   "release": "public"
+  },
+  {
+   "id": "denning-et-al-2019",
+   "date": "2019-10",
+   "date_label": "October 2019",
+   "type": "Conference paper",
+   "status": "Published paper",
+   "ref": "IAC-19-A4.2.4, x52210",
+   "issuer": "K. Denning, A. Berea, K. A. Capova, D. Forgan, E. Korpela, M. P. Oman-Reagan, J. Tarter, L. I. Tennen",
+   "title": "SETI and Post-Detection: Towards a New Research Roadmap",
+   "short": "Denning et al. 2019",
+   "summary": "A multi-authored discussion paper by Committee members, written to give the background to the post-detection report of that year. It argues that discovery is a process rather than a moment, recasts 'post-detection' as preparation for discovery, the process of discovery and protocol during detection, reviews earlier work, and suggests supplementing the Protocols with Codes of Conduct and Best Practices guidelines.",
+   "notes": "Presented at the 70th International Astronautical Congress, Washington DC, 2019. The authors were not formally tasked by the Committee with this work. Copyright the authors.",
+   "file": "2019-10-denning-et-al-iac-washington.pdf",
+   "also_meetings": [
+    "IAC 2019, Washington DC"
+   ],
+   "category": "denning",
+   "release": "public"
+  },
+  {
+   "id": "tennen-forgan-2018",
+   "date": "2018-10",
+   "date_label": "October 2018",
+   "type": "Conference paper",
+   "status": "Published paper",
+   "ref": "IAC-18-A4.2.1, x47585",
+   "issuer": "Leslie I. Tennen and Duncan Forgan",
+   "title": "Review of the SETI Post-Detection and Reply Protocols: Current Actions and Developments",
+   "short": "Tennen & Forgan 2018",
+   "summary": "Written after the Committee's Executive asked Tennen and Forgan to review the protocols. It argues that the 2010 revision had not kept pace with SETI's scientific and technical advances or with the shift from print and broadcast media to social media, and makes the case for re-examining the Protocols.",
+   "notes": "Presented at the 69th International Astronautical Congress, Bremen, 2018.",
+   "file": "2018-10-tennen-forgan-iac-bremen.pdf",
+   "also_meetings": [
+    "IAC 2018, Bremen"
+   ],
+   "category": "denning",
+   "release": "public"
+  },
+  {
+   "id": "compass-2018",
+   "date": "2018-09-30",
+   "date_label": "30 September 2018",
+   "type": "Proposal",
+   "status": "Proposal",
+   "issuer": "John Elliott, Kathryn Denning, Denise Herzing, Lori Walton, Paul Davies",
+   "title": "Proposal to form a SETI ComPAS (Communication and Post-Detection Analytics Strategies) Subcommittee",
+   "short": "ComPAS proposal, 2018",
+   "summary": "A proposal to the IAA and the Committee's Executive for a new post-detection subcommittee, noting that the Committee had traditionally had a post-detection task force but had none at the time, and setting out a forward-looking strategy for the decade ahead.",
+   "file": "2018-09-compass-subcommittee-proposal.pdf",
+   "category": "denning",
+   "release": "public"
+  },
+  {
+   "id": "scope-2018",
+   "date": "2018-04-16",
+   "date_label": "16 April 2018",
+   "type": "Proposal",
+   "status": "Proposal (not approved)",
+   "issuer": "Paul Davies, Kathryn Denning, John Elliott, Denise Herzing, Lori Walton",
+   "title": "Proposal to form a SETI SCOPE (Society, Communications, Outreach, Post-Detection, Ethics) Subcommittee",
+   "short": "SCOPE proposal, 2018",
+   "summary": "The earlier draft proposal for a subcommittee covering society, communications, outreach, post-detection and ethics, circulated in April 2018. It was not approved; the ComPAS proposal of September 2018 followed.",
+   "notes": "Converted from Word.",
+   "file": "2018-04-scope-subcommittee-proposal.pdf",
+   "category": "denning",
+   "release": "public"
+  },
+  {
+   "id": "oliver-shostak-2025",
+   "date": "2025-09",
+   "date_label": "September 2025",
+   "type": "Conference paper",
+   "status": "Published paper",
+   "ref": "IAC-25-A4.2.1, x996676",
+   "issuer": "C. A. Oliver and G. S. Shostak",
+   "title": "The Case of the EQ Peg Hoax 25 Years Ago: Would a Replay in Today's Media Be the Same?",
+   "short": "Oliver & Shostak 2025",
+   "summary": "Revisits the 1998 EQ Peg hoax, a false claim of a SETI detection that ran in the world's media for five days, and asks how such a story would play out today, with fake news, polarisation and social media, drawing lessons for how a real detection should be communicated.",
+   "notes": "Presented at the 76th International Astronautical Congress, Sydney, 2025. Copyright the authors.",
+   "file": "2025-10-oliver-shostak-iac-sydney.pdf",
+   "also_meetings": [
+    "IAC 2025, Sydney"
+   ],
+   "category": "denning",
+   "release": "public"
+  },
+  {
+   "id": "declaration-2025-11",
+   "date": "2025-11-27",
+   "date_label": "27 November 2025",
+   "type": "Draft declaration",
+   "status": "Version voted on",
+   "issuer": "IAA SETI Committee Post-Detection Task Group (chair: Michael Garrett)",
+   "title": "Draft Revised Declaration of Principles – 2026 Update (version 27 November 2025)",
+   "short": "Version voted on, November 2025",
+   "summary": "The text put to the Committee's vote between 2 December 2025 and 31 January 2026, and approved by 53 votes to 1, with 3 abstentions. After the vote it was turned into an IAA Position Paper, with minor changes of form, and adopted by the IAA Board of Trustees in spring 2026.",
+   "file": "2025-11-declaration-voted-version.pdf",
+   "also_meetings": [
+    "IAC 2026, Antalya"
+   ],
+   "category": "denning",
+   "release": "public"
+  },
+  {
+   "id": "garrett-2025-slides",
+   "date": "2025-10",
+   "date_label": "October 2025",
+   "type": "Slides",
+   "status": "Conference presentation",
+   "ref": "IAC-25-A4.2.4",
+   "issuer": "Michael A. Garrett",
+   "title": "SETI Post-Detection Protocols: Progress Towards a New Version (IAC 2025 presentation)",
+   "short": "Garrett IAC 2025 slides",
+   "summary": "The slides for the IAC 2025 paper on the protocols, presented in session A4.2 in Sydney.",
+   "file": "2025-10-garrett-iac-sydney-slides.pdf",
+   "also_meetings": [
+    "IAC 2025, Sydney"
+   ],
+   "category": "denning",
+   "release": "public"
+  },
+  {
+   "id": "schwarz-2026",
+   "date": "2026-10",
+   "date_label": "October 2026",
+   "type": "Conference paper",
+   "status": "Forthcoming paper",
+   "ref": "IAC-26-A4.2.3, x114522",
+   "issuer": "A. Schwarz, J. Bimm, C. Oliver, K. Denning, C. Haramia, G. Profitiliotis, L. Walton",
+   "title": "Best Practices Guidelines for Science and Risk Communication for Technosignatures Searches and Detections: A Draft for Discussion",
+   "short": "Schwarz et al. 2026",
+   "summary": "A draft set of Best Practices Guidelines for science and risk communication in technosignature searches, one of the supplements to the 2026 Update. Its pages 3–5 discuss the Rio and San Marino Scales and why they are no longer the best tools.",
+   "notes": "To be presented at the 77th International Astronautical Congress, Antalya, October 2026. Copyright the International Astronautical Federation.",
+   "file": "",
+   "release": "cite",
+   "category": "denning"
+  },
+  {
+   "id": "acta-1990",
+   "date": "1990-02",
+   "date_label": "1990",
+   "category": "denning",
+   "type": "Journal special issue",
+   "status": "Published papers",
+   "ref": "Acta Astronautica, vol. 21, no. 2 (1990)",
+   "issuer": "Acta Astronautica (Pergamon Press); edited by Jill Tarter and Michael Michaud",
+   "title": "Acta Astronautica special issue on the detection of extraterrestrial intelligence and an international protocol",
+   "short": "Acta Astronautica special issue, 1990",
+   "summary": "The special issue that published the 1989 Declaration of Principles together with the papers behind it. It collects the papers presented at two sessions of the International Astronautical Congress: \"Legal, Political and Social Implications of the Detection of an Extraterrestrial Intelligent Signal\" (Innsbruck, 1986) and \"Formulation of an International Protocol for Activities Following the Detection of a Signal from Extraterrestrial Intelligence\" (Brighton, 1987). After Brighton, a drafting session and later rounds of comment led by Michael Michaud produced the draft agreement that became the Declaration, endorsed by the IAA and the IISL in April 1989 and printed as the last item of the issue. The papers cover verifying a signal, announcing it, the pressures towards secrecy, diplomacy, international law and the question of a reply.",
+   "notes": "Scans of the published papers, reproduced with the permission of Elsevier. The issue grouped the papers by topic; they are listed here in page order.",
+   "link": "https://www.sciencedirect.com/journal/acta-astronautica/vol/21/issue/2",
+   "link_label": "Issue on ScienceDirect",
+   "file": "",
+   "release": "public",
+   "parts": [
+    {
+     "title": "Preface",
+     "authors": "Jill Tarter and Michael Michaud (editors)",
+     "pages": "pp. xi–xii",
+     "file": "1990-acta-astronautica-21-2-00-preface.pdf"
+    },
+    {
+     "title": "SETI false alerts as “laboratory” tests for an international protocol formulation",
+     "authors": "Jean Heidmann",
+     "pages": "pp. 73–80",
+     "file": "1990-acta-astronautica-21-2-01-heidmann.pdf"
+    },
+    {
+     "title": "Signal verification in the real world: when is a signal not a signal?",
+     "authors": "Peter B. Boyce",
+     "pages": "pp. 81–84",
+     "file": "1990-acta-astronautica-21-2-02-boyce-verification.pdf"
+    },
+    {
+     "title": "The first two steps after the signal arrives: verify and tell the world",
+     "authors": "Peter B. Boyce",
+     "pages": "pp. 85–88",
+     "file": "1990-acta-astronautica-21-2-03-boyce-first-two-steps.pdf"
+    },
+    {
+     "title": "Announcing the first signal: policy aspects",
+     "authors": "John M. Logsdon and Christine M. Anderson",
+     "pages": "pp. 89–92",
+     "file": "1990-acta-astronautica-21-2-04-logsdon-anderson.pdf"
+    },
+    {
+     "title": "Signals from ETI detected — what next?",
+     "authors": "Zbigniew Paprotny",
+     "pages": "pp. 93–95",
+     "file": "1990-acta-astronautica-21-2-05-paprotny.pdf"
+    },
+    {
+     "title": "A critical examination of factors that might encourage secrecy",
+     "authors": "Allen Tough",
+     "pages": "pp. 97–102",
+     "file": "1990-acta-astronautica-21-2-06-tough.pdf"
+    },
+    {
+     "title": "Diplomatic and political problems affecting the formulation and implementation of an international protocol for activities following the detection of a signal from extraterrestrial intelligence",
+     "authors": "Allan E. Goodman",
+     "pages": "pp. 103–108",
+     "file": "1990-acta-astronautica-21-2-07-goodman-protocol.pdf"
+    },
+    {
+     "title": "Contact: releasing the news",
+     "authors": "Roberto Pinotti",
+     "pages": "pp. 109–115",
+     "file": "1990-acta-astronautica-21-2-08-pinotti.pdf"
+    },
+    {
+     "title": "The impact of contact",
+     "authors": "Ben Finney",
+     "pages": "pp. 117–121",
+     "file": "1990-acta-astronautica-21-2-09-finney.pdf"
+    },
+    {
+     "title": "International law implications of the detection of extraterrestrial intelligent signals",
+     "authors": "Vladimír Kopal",
+     "pages": "pp. 123–126",
+     "file": "1990-acta-astronautica-21-2-10-kopal.pdf"
+    },
+    {
+     "title": "XII Tables for researchers on extraterrestrial intelligence",
+     "authors": "Aldo Armando Cocca",
+     "pages": "pp. 127–130",
+     "file": "1990-acta-astronautica-21-2-11-cocca.pdf"
+    },
+    {
+     "title": "Discovery of ETI: terrestrial and extraterrestrial legal implications",
+     "authors": "Ernst Fasan",
+     "pages": "pp. 131–135",
+     "file": "1990-acta-astronautica-21-2-12-fasan.pdf"
+    },
+    {
+     "title": "Diplomacy and the search for extraterrestrial intelligence (SETI)",
+     "authors": "Allan E. Goodman",
+     "pages": "pp. 137–141",
+     "file": "1990-acta-astronautica-21-2-13-goodman-diplomacy.pdf"
+    },
+    {
+     "title": "Basic elements of an international terrestrial reply following the detection of a signal from extraterrestrial intelligence",
+     "authors": "G. C. M. Reijnen",
+     "pages": "pp. 143–148",
+     "file": "1990-acta-astronautica-21-2-14-reijnen.pdf"
+    },
+    {
+     "title": "Who will speak for Earth? Possible structures for shaping a response to a signal detected from an extraterrestrial civilization",
+     "authors": "Donald Goldsmith",
+     "pages": "pp. 149–151",
+     "file": "1990-acta-astronautica-21-2-15-goldsmith.pdf"
+    },
+    {
+     "title": "Declaration of Principles Concerning Activities Following the Detection of Extraterrestrial Intelligence",
+     "authors": "IAA and IISL",
+     "pages": "pp. 153–154",
+     "file": "1990-acta-astronautica-21-2-16-declaration.pdf"
+    }
+   ]
   }
  ]
 }

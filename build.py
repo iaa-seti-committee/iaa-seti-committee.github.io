@@ -38,6 +38,7 @@ CATS = OrderedDict([
     ("revision", "The 2022–2026 revision"),
     ("scales", "Assessment scales"),
     ("history", "Histories"),
+    ("denning", "Kathryn Denning Collection"),
     ("governance", "Governance"),
     ("meetings", "Committee records"),
 ])
@@ -45,7 +46,8 @@ CATS = OrderedDict([
 def status_class(s):
     s = (s or "").lower()
     if s.startswith("current"): return "st-current"
-    if "draft" in s or "forthcoming" in s: return "st-draft"
+    if "draft" in s or "forthcoming" in s or "proposed" in s: return "st-draft"
+    if "historical" in s: return "st-old"
     if "superseded" in s: return "st-old"
     if "adopted" in s: return "st-adopted"
     return "st-record"
@@ -70,11 +72,22 @@ def card(d, alt=None):
         links += '<span class="cite-note">Citation only. The full text is not hosted here.</span>'
     if d.get("release") == "pending":
         links += '<span class="cite-note">Not yet available. It will be added here once adopted.</span>'
+    if d.get("parts"):
+        show = d.get("release") in ("public", "review")
+        lis = []
+        for pt in d["parts"]:
+            by = f' <span class="pt-a">{e(pt["authors"])}</span>' if pt.get("authors") else ""
+            pp = f' <span class="pt-pp">{e(pt["pages"])}</span>' if pt.get("pages") else ""
+            a = f' <a class="pt-link" href="files/{e(pt["file"])}">PDF</a>' if show and pt.get("file") else ""
+            lis.append(f'<li><span class="pt-t">{e(pt["title"])}</span>{by}{pp}{a}</li>')
+        parts_html = f'<h4 class="pt-h">Contents ({len(d["parts"])} items)</h4><ol class="parts">{"".join(lis)}</ol>'
+    else:
+        parts_html = ""
     flag = f'<p class="review-flag"><strong>Needs your OK before publishing.</strong> {e(d.get("review_note"))}</p>' if rv else ""
     notes = f'<p class="notes">{e(d.get("notes"))}</p>' if d.get("notes") else ""
-    return f'''<details class="doc{' is-review' if rv else ''}" id="{e(did)}" data-cat="{e(d['category'])}" data-text="{e((d['title']+' '+d.get('summary','')+' '+d.get('issuer','')+' '+d.get('date_label','')).lower())}">
+    return f'''<details class="doc{' is-review' if rv else ''}" id="{e(did)}" data-cat="{e(d['category'])}" data-text="{e((d['title']+' '+d.get('summary','')+' '+d.get('issuer','')+' '+d.get('date_label','')+' '+' '.join(pt.get('title','')+' '+pt.get('authors','') for pt in d.get('parts') or [])).lower())}">
 <summary><span class="d-date">{e(d.get('date_label'))}</span><span class="d-title">{e(d['title'])}</span><span class="pill {status_class(d.get('status'))}">{e(d.get('status'))}</span>{'<span class="pill st-pd">Post-detection</span>' if alt is not None and (d.get('pdp') or d.get('category')=='revision') else ''}{'<span class="pill st-review">Review</span>' if rv else ''}</summary>
-<div class="d-body">{flag}<p>{e(d.get('summary'))}</p>{notes}<dl class="meta">{dl}</dl><div class="links">{links}</div></div>
+<div class="d-body">{flag}<p>{e(d.get('summary'))}</p>{notes}<dl class="meta">{dl}</dl>{parts_html}<div class="links">{links}</div></div>
 </details>'''
 
 def doc_ref(i, label=None):
@@ -121,7 +134,8 @@ for row in compare:
     cmp_rows.append(f'<article class="crow"><header><h3>{e(row["theme"])}</h3><p>{e(row["change"])}</p></header><div class="cells">{"".join(cells)}</div></article>')
 
 GROUP_INTRO = {
-    "scales": "Two scales developed within the Committee to put a number on events that are otherwise hard to judge. The Rio Scale rates the significance of a claimed detection of extraterrestrial intelligence; the San Marino Scale rates the potential impact of a deliberate transmission from Earth.",
+    "scales": "Two scales developed within the Committee to put a number on events that are otherwise hard to judge. The Rio Scale rates the significance of a claimed detection of extraterrestrial intelligence; the San Marino Scale rates the potential impact of a deliberate transmission from Earth. Both were formally adopted and have not been withdrawn, but they are no longer regarded as the best tools for these purposes and are kept here as part of the historical record (see Schwarz et al. 2026, pp. 3–5).",
+    "denning": "Papers and documents brought together by Kathryn Denning (York University), a member of the Committee since 2005 and of its Post-Detection Task Group. They give the background to the post-detection protocols, from the papers that led to the 1989 Declaration to work that preceded the formal revision and texts that form part of its record. Items marked Proposed were never adopted.",
 }
 def by_date(ds): return sorted(ds, key=lambda d: d["date"])
 cat_blocks = []
@@ -271,6 +285,13 @@ dl.meta dd{margin:2px 0 0}
 .btn{display:inline-block;font:500 14px var(--sans);padding:7px 14px;border-radius:6px;background:var(--accent);color:var(--bg);text-decoration:none}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
 .cite-note{font-size:13px;color:var(--muted)}
+.pt-h{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+ol.parts{margin:0 0 14px;padding-left:1.6em;max-width:80ch}
+ol.parts li{padding:5px 0;border-bottom:1px solid var(--rule);font-size:15px}
+ol.parts li:last-child{border-bottom:0}
+.pt-a{color:var(--muted)}
+.pt-pp{font:400 12px var(--mono);color:var(--muted);white-space:nowrap}
+.pt-link{font:500 12px var(--mono);margin-left:6px;white-space:nowrap}
 .pill{font:500 11px var(--mono);letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap}
 .st-current{background:var(--ok-soft);color:var(--ok)}
 .st-adopted{background:var(--accent-soft);color:var(--accent)}
@@ -354,7 +375,7 @@ BODY = f"""{banner}
 <h2>About</h2>
 <div class="about">
 <div><h3>This site</h3><p>Maintained by the IAA SETI Committee to keep its meeting records and the texts of the post-detection protocols together in one place that anyone can read.</p><p>The summaries were written for this site. The documents themselves are the authoritative source.</p></div>
-<div><h3>Copyright</h3><p>The Committee's meeting records, presentations and reports are placed in the public domain with the agreement of their authors. Texts issued by the International Academy of Astronautics are reproduced for reference, and copyright in them stays with the IAA. Papers whose copyright is held by the International Astronautical Federation are reproduced with the permission of the IAF and their authors. Obituaries published elsewhere are linked rather than copied.</p></div>
+<div><h3>Copyright</h3><p>The Committee's meeting records, presentations and reports are placed in the public domain with the agreement of their authors. Texts issued by the International Academy of Astronautics are reproduced for reference, and copyright in them stays with the IAA. Papers whose copyright is held by the International Astronautical Federation are reproduced with the permission of the IAF and their authors. Papers from the 1990 special issue of Acta Astronautica are reproduced with the permission of Elsevier. Obituaries published elsewhere are linked rather than copied.</p></div>
 <div><h3>Sources</h3><p>Some copies were printed from the Committee's earlier website, iaaseti.org, and carry the print date. Where an official copy exists elsewhere, the entry links to it.</p><p>The current Declaration is published by the IAA at <a href="https://iaaspace.org/wp-content/uploads/iaa/Scientific%20Activity/iaasetideclaration.pdf" rel="noopener">iaaspace.org</a>.</p></div>
 <div><h3>Contact</h3><p>To report an error on this site, email <a href="mailto:michael.garrett@manchester.ac.uk">michael.garrett@manchester.ac.uk</a>.</p></div>
 </div>
