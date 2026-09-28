@@ -38,7 +38,7 @@ CATS = OrderedDict([
     ("revision", "The 2022–2026 revision"),
     ("scales", "Assessment scales"),
     ("history", "Histories"),
-    ("denning", "Kathryn Denning Collection"),
+    ("denning", "Post-Detection History Reference Collection (In Progress)"),
     ("governance", "Governance"),
     ("meetings", "Committee records"),
 ])
@@ -69,7 +69,7 @@ def card(d, alt=None):
     if d.get("link"):
         links += f' <a class="btn ghost" href="{e(d["link"])}" rel="noopener">{e(d.get("link_label") or "External link")} ↗</a>'
     if d.get("release") == "cite":
-        links += '<span class="cite-note">Citation only. The full text is not hosted here.</span>'
+        links += f'<span class="cite-note">{e(d.get("cite_note") or "Citation only. The full text is not hosted here.")}</span>'
     if d.get("release") == "pending":
         links += '<span class="cite-note">Not yet available. It will be added here once adopted.</span>'
     if d.get("parts"):
@@ -135,7 +135,7 @@ for row in compare:
 
 GROUP_INTRO = {
     "scales": "Two scales developed within the Committee to put a number on events that are otherwise hard to judge. The Rio Scale rates the significance of a claimed detection of extraterrestrial intelligence; the San Marino Scale rates the potential impact of a deliberate transmission from Earth. Both were formally adopted and have not been withdrawn, but they are no longer regarded as the best tools for these purposes and are kept here as part of the historical record (see Schwarz et al. 2026, pp. 3–5).",
-    "denning": "Papers and documents brought together by Kathryn Denning (York University), a member of the Committee since 2005 and of its Post-Detection Task Group. They give the background to the post-detection protocols, from the papers that led to the 1989 Declaration to work that preceded the formal revision and texts that form part of its record. Items marked Proposed were never adopted.",
+    "denning": "A reference collection on the history of thinking about post-detection, brought together by Kathryn Denning (York University), a member of the Committee since 2005 and of its Post-Detection Task Group. It runs from the papers that led to the 1989 Declaration to work that preceded and accompanied the recent revision, and is still being added to. Items marked Proposed were never adopted; internal Committee proposals are listed for the record but not published.",
 }
 def by_date(ds): return sorted(ds, key=lambda d: d["date"])
 cat_blocks = []
